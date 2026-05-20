@@ -1,0 +1,13 @@
+:root {
+    --main-color: #0AC43E;
+    --white-color: #F1F1F1;
+    --black-color: #101010;
+    --dark-gray: #1D1D1D;
+
+    --ui-1: 0.25rem;
+    --ui-2: 0.5rem;
+    --ui-3: 0.75rem;
+    --ui-4: 1rem;
+    --ui-5: 1.125rem;
+
+}

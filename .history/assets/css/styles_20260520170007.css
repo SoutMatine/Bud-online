@@ -1,0 +1,105 @@
+h1,
+h2,
+h3,
+p,
+a,
+span,
+br,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Ubuntu;
+    background-color: var(--white-color);
+}
+
+.main-container {
+    width: 98dvw;
+    margin: 0 auto;
+}
+
+button.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--ui-3);
+    -webkit-border-radius: var(--ui-3);
+    -moz-border-radius: var(--ui-3);
+    -ms-border-radius: var(--ui-3);
+    -o-border-radius: var(--ui-3);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: var(--ui-1) var(--ui-5);
+
+    &:hover {
+        color: var(--white-color);
+        background-color: var(--dark-gray);
+    }
+}
+
+
+/* ======================= HEADER ======================= */
+header {
+    position: fixed;
+    width: 100dvw;
+    top: 0;
+    padding: var(--ui-5) 0;
+
+    .header__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--white-color);
+        border-radius: var(--ui-5);
+        -webkit-border-radius: var(--ui-5);
+        -moz-border-radius: var(--ui-5);
+        -ms-border-radius: var(--ui-5);
+        -o-border-radius: var(--ui-5);
+        padding: 0 var(--ui-5);
+
+        svg {
+            path {
+                fill: #101010;
+            }
+        }
+    }
+}
+
+/* ======================= HEADER ======================= */
+
+
+
+/* ======================= Main Screen ======================= */
+.main-screen {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border-bottom-right-radius: calc(var(--ui-5) * 2);
+    border-bottom-left-radius: calc(var(--ui-5) * 2);
+    padding-bottom: calc(var(--ui-5) * 5);
+
+    .main-screen__inner {
+        padding-top: var(--ui-5);
+
+        .main-screen__text {
+            display: flex;
+            flex-direction: column;
+            gap: var(--ui-2);
+            align-content: center;
+            text-align: center;
+
+            h1 {
+                font-size: calc(3rem + 2px);
+                word-break: break-word;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

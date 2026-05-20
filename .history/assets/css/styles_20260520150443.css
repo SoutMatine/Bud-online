@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+p,
+a,
+span,
+br,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 90s
+    height: 90dvh;
+    background-color: black;
+    background: black;
+}

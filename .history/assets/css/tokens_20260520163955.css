@@ -1,0 +1,12 @@
+:root {
+    --main-color: #0AC43E;
+    --white-color: #F1F1F1;
+    --black-color: #101010;
+    --dark-gray: #1D1D1D;
+
+    --ui-1: 0.25rem;
+    --ui-2: 0.5rem'
+    --ui-3: 12px;
+    --ui-4: 16px;
+    --ui-5: 18px;
+}
