@@ -1,4 +1,0 @@
-@layer normalize, styles;
-
-@import url('styles.css') layer(styles);
-@import url('normalize.css') layer(normalize);
