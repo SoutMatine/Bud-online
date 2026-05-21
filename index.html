@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="/assets/css/base.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="main-container">
             <div class="header__inner header-anim">
-                <svg class="header-anim" width="200" height="43" viewBox="0 0 200 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header-anim" width="200" height="43" viewBox="0 0 200 43" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M1.51348 11.3757C2.34935 6.64954 6.84905 3.49747 11.5639 4.33534C16.2787 5.17322 19.4233 9.68372 18.5874 14.4099C17.7515 19.136 13.2518 22.2881 8.53696 21.4503C3.82214 20.6124 0.677619 16.1018 1.51348 11.3757Z"
                         fill="#0AC43E" />
@@ -53,19 +54,97 @@
             </div>
         </div>
     </header>
+    <div class="wrapper">
+        <div class="content">
 
-    <section class="main-screen trigger-section">
-        <div class="main-container">
-            <div class="main-screen__inner">
-                <div class="main-screen__text">
-                    <h1>Делаем сайты и веб-сервисы, которыми удобно пользоваться</h1>
-                    <p>От лендинга до сложных платформ. Разработка под ключ</p>
+            <section class="main-screen dark-section">
+                <div class="main-container">
+                    <div class="main-screen__inner">
+                        <div class="main-screen__text">
+                            <h1>Делаем сайты и веб-сервисы, которыми удобно пользоваться</h1>
+                            <p>От лендинга до сложных платформ. Разработка под ключ</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+            <section class="completed-works ">
+                <div class="main-container">
+                    <div class="completed-works__inner different-speed">
+                        <div class="grid-line">
+                            <div class="completed-work left-item">
+                                <img src="/assets/img/basket.jpg" alt="">
+                                <div class="text" style="background-color: #1B072D; box-shadow: 0px -15px 10px #1B072D">
+                                    <p>Школа баскетбола</p>
+                                </div>
+                            </div>
+                            <div class="completed-work right-item">
+                                <img src="/assets/img/pr4.jpg" alt="">
+                                <div class="text" style="background-color: #000000; box-shadow: 0px -15px 10px #000000">
+                                    <p>Puzzle Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="completed-work left-item">
+                                <img src="/assets/img/pr1.jpg" alt="">
+                                <div class="text" style="background-color: #574E51; box-shadow: 0px -15px 10px #574E51">
+                                    <p>Кәеф - бар</p>
+                                </div>
+                            </div>
+                            <div class="completed-work right-item">
+                                <img src="/assets/img/medugol.jpg" alt="">
+                                <div class="text" style="background-color: #D59F5F; box-shadow: 0px -15px 10px #D59F5F">
+                                    <p>Медвежий угол</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="completed-work left-item">
+                                <img src="/assets/img/ilfani.jpg" alt="">
+                                <div class="text" style="background-color: #A9744D; box-shadow: 0px -15px 10px #A9744D">
+                                    <p>Ильфани</p>
+                                </div>
+                            </div>
+                            <div class="completed-work bigger">
+                                <img src="/assets/img/pr10.jpg" alt="">
+                                <div class="text" style="background-color: #542E1C; box-shadow: 0px -15px 10px #542E1C">
+                                    <p>ПО «Аш-Су»</p>
+                                </div>
+                            </div>
+                            <div class="completed-work right-item">
+                                <img src="/assets/img/arena.jpg" alt="">
+                                <div class="text" style="background-color: #cea315; box-shadow: 0px -15px 10px #cea315">
+                                    <p>ARENA - аренда строительной техники</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-line">
+                            <div class="completed-work left-item">
+                                <img src="/assets/img/pr8.jpg" alt="">
+                                <div class="text" style="background-color: #8F8F8F; box-shadow: 0px -15px 10px #8F8F8F">
+                                    <p>#SABA</p>
+                                </div>
+                            </div>
+                            <div class="completed-work">
+                                <img src="/assets/img/pr11.jpg" alt="">
+                                <div class="text" style="background-color: #46463E; box-shadow: 0px -15px 10px #46463E">
+                                    <p>Art Ceiling</p>
+                                </div>
+                            </div>
+                            <div class="completed-work bigger right-item">
+                                <img src="/assets/img/pr7.jpg" alt="">
+                                <div class="text" style="background-color: #161C24; box-shadow: 0px -15px 10px #161C24">
+                                    <p>Все для кухни</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="empty dark-section"></section>
 
-    <section class="empty trigger-section" style="margin-top: 450px;"></section>
+        </div>
+    </div>
 
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/animation.js"></script>
