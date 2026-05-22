@@ -4,10 +4,14 @@
     --black-color: #101010;
     --dark-gray: #1D1D1D;
 
+    --white-color_rgb: 241, 241, 241;
+    --black-color_rgb: 16, 16, 16;
+
     --ui-1: 0.25rem;
     --ui-2: 0.5rem;
     --ui-3: 0.75rem;
     --ui-4: 1rem;
     --ui-5: 1.125rem;
+    --ui-6: 1.25rem;
 
 }
