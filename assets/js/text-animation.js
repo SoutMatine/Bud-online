@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const customDuration = e.dataset.duration ? parseFloat(e.dataset.duration) : 0.2;
 
     tl.from(e.querySelectorAll(".char"), {
-      yPercent: 100,
+      yPercent: 130,
       duration: customDuration,
       ease: "power1.out",
       stagger: { amount: 0.6 },

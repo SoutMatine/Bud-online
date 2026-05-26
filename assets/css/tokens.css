@@ -15,5 +15,6 @@
     --ui-6: 1.25rem;
 
     --transition-main: 1.5s cubic-bezier(0.22, 1.2, 0.36, 1);
+    --transition-main__faster: 0.6s cubic-bezier(0.22, 1.2, 0.36, 1);
 
 }

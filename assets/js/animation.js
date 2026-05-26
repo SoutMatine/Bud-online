@@ -21,7 +21,7 @@ const mainScreenTl = gsap.timeline({
   scrollTrigger: {
     trigger: '.main-screen',
     start: 'top top',
-    end: '50%',
+    end: '30%',
     pin: true,
     scrub: 1,
   }
@@ -38,29 +38,46 @@ let itemRight = gsap.utils.toArray('.grid-line .right-item')
 let item = gsap.utils.toArray('.grid-line')
 
 
-gsap.utils.toArray('.grid-line').forEach((item, i) => {
-  mainScreenTl.fromTo(item,
-    { y: 300, opacity: 0.5, scale: 0.9 },
-    { opacity: 1, y: 0, scale: 1, duration: 0.8 },
-    i * 0.4
-  )
+const workPageImage = document.querySelector(".work-page__image")
+gsap.from(workPageImage, {
+  opacity: 0,
+  duration: 1.5,
+  delay: 2,
+  ease: "sine.out",
 })
 
-itemLeft.forEach((item, i) => {
-  mainScreenTl.fromTo(item,
-    { x: -500 },
-    { x: 0, scale: 1, duration: 1 },
-    i * 0.5
-  )
-})
+const btnBack = document.querySelector(".btnBack")
+if (btnBack) {
+  gsap.to(btnBack, {
+    opacity: 1,
+    duration: 0.5,
+    delay: 2.5,
+    ease: "since.out"
+  })
+}
+// gsap.utils.toArray('.grid-line').forEach((item, i) => {
+//   mainScreenTl.fromTo(item,
+//     { y: 500, opacity: 0.5, scale: 0.9 },
+//     { opacity: 1, y: 0, scale: 1, duration: 0.8 },
+//     i * 0.4
+//   )
+// })
 
-itemRight.forEach((item, i) => {
-  mainScreenTl.fromTo(item,
-    { x: 500 },
-    { x: 0, scale: 1, duration: 1 },
-    i * 0.5
-  )
-})
+// itemLeft.forEach((item, i) => {
+//   mainScreenTl.fromTo(item,
+//     { x: -500 },
+//     { x: 0, scale: 1, duration: 1 },
+//     i * 0.5
+//   )
+// })
+
+// itemRight.forEach((item, i) => {
+//   mainScreenTl.fromTo(item,
+//     { x: 500 },
+//     { x: 0, scale: 1, duration: 1 },
+//     i * 0.5
+//   )
+// })
 
 
 

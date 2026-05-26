@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
   const mainScreen = document.querySelector(".main-screen");
+  const workPage = document.querySelector(".work-page")
 
   const updateMargin = () => {
     let headerHeight = header.offsetHeight;
-    mainScreen.style.paddingTop = headerHeight + "px";
+    if (mainScreen) mainScreen.style.paddingTop = headerHeight + "px";
+    if (workPage) workPage.style.paddingTop = headerHeight + "px"
   };
 
   updateMargin();
